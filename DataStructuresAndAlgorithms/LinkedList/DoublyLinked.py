@@ -77,15 +77,33 @@ class DoublyLinkedList:
         for _ in range(index):
             temp = temp.next
         return temp
-    def getOptimizedforDoublyLinkedList(get, self):
+    def getOptimizedforDoublyLinkedList(self,index):
+        if index < 0 or index >= self.length:
+            return None
+        temp = self.head
+        if index < self.length/2:
+            for _ in range(index):
+                temp = temp.next
+        else:
+            temp = self.tail
+            for _ in range(self.length-1, index, -1):
+                temp = temp.prev
+        return temp
+
 
 
 
 
 my_doubly_linked_list = DoublyLinkedList(10)
 my_doubly_linked_list.append(44)
+my_doubly_linked_list.append(11)
+my_doubly_linked_list.append(22)
+my_doubly_linked_list.append(33)
 
 my_doubly_linked_list.print_list()
 
 my_doubly_linked_list.pop()
 my_doubly_linked_list.print_list()
+
+print(my_doubly_linked_list.get(1).value)
+print(my_doubly_linked_list.getOptimizedforDoublyLinkedList(1).value)
