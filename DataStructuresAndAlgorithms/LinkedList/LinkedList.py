@@ -117,20 +117,6 @@ class LinkedList:
 
 
 
-        
-        
-        
-
-
-
-    
-
-
-    
-
-
-
-
 print('hello')
 
 my_linked_list = LinkedList(19)

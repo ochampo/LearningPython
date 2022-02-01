@@ -2,6 +2,7 @@
 
 
 from email.errors import NonPrintableDefect
+import re
 
 
 class Node:
@@ -89,6 +90,34 @@ class DoublyLinkedList:
             for _ in range(self.length-1, index, -1):
                 temp = temp.prev
         return temp
+    def set_Value(self, index, value):
+        temp = self.get(index)
+        if temp:
+            temp.value = value
+            return True
+        return False
+    def insert(self,index, value):
+        if index < 0 or index > self.length:
+            return False
+        if index == 0:
+            return self.prepend(value)
+        if index == self.length:
+            return self.append(value)
+        
+        new_node = Node(value)
+        before = self.get(index -1)
+        after = before.next
+        
+        new_node.prev = before
+        new_node.next = after
+        before.next = new_node
+        after.prev = new_node
+
+        self.length +=1
+
+        return True
+
+      
 
 
 
@@ -99,7 +128,7 @@ my_doubly_linked_list.append(44)
 my_doubly_linked_list.append(11)
 my_doubly_linked_list.append(22)
 my_doubly_linked_list.append(33)
-
+my_doubly_linked_list.set_Value(2,5)
 my_doubly_linked_list.print_list()
 
 my_doubly_linked_list.pop()
