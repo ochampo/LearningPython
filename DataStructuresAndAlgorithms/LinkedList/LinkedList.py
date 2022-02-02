@@ -122,20 +122,8 @@ print('hello')
 my_linked_list = LinkedList(19)
 
 my_linked_list.append(11)
-my_linked_list.append(15)
-my_linked_list.append(20)
-my_linked_list.prepend(41)
-
-my_linked_list.insert(0,10)
-
-my_linked_list.print_list()
-print(my_linked_list.get(3).value , "get test")
-print("hello")
-print(my_linked_list.pop().value, "pop")
-
-print(my_linked_list.head.value)
-my_linked_list.reverse
-
+my_linked_list.append(12)
+my_linked_list.append(13)
 my_linked_list.print_list()
     
 
