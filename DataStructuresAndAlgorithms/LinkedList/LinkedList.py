@@ -118,12 +118,15 @@ class LinkedList:
 
 
 print('hello')
-
-my_linked_list = LinkedList(19)
+x = input("Please input ")
+my_linked_list = LinkedList(x)
 
 my_linked_list.append(11)
 my_linked_list.append(12)
 my_linked_list.append(13)
 my_linked_list.print_list()
-    
+   
+my_linked_list.pop()
 
+
+my_linked_list.print_list()
