@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\DataStructuresAndAlgorithms",
-    "\\DataStructuresAndAlgorithms\\LinkedList",
-    "\\StacksAndQueues"
+    "\\DataStructuresAndAlgorithms\\BST",
+    "\\DataStructuresAndAlgorithms\\HashTable"
   ],
-  "SelectedNode": "\\DataStructuresAndAlgorithms\\LinkedList\\LinkedList.py",
+  "SelectedNode": "\\DataStructuresAndAlgorithms\\HashTable\\HashTable.py",
   "PreviewInSolutionExplorer": false
 }
