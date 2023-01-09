@@ -1,0 +1,1 @@
+baseUrl = 'https://api.upcitemdb.com/prod/trial/'
